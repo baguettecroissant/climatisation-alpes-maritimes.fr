@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const title = "Tarif Climatisation Alpes-Maritimes (06) : Prix Matériel & Pose 2026";
+const description = "Retrouvez les tarifs détaillés pour l'installation d'une climatisation réversible premium ou d'un gainable dans le 06. Prix du matériel, coût de pose, aides.";
+
+const breadcrumbItems = [
+  { label: "Accueil", url: "/" },
+  { label: "Tarifs Installation Climatisation" }
+];
+---
+
+<Layout title={title} description={description} activeTab="tarifs">
+  <Breadcrumb items={breadcrumbItems} />
+
+  <section style="padding: 50px 0 80px; background: white;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 50px;">
+        <span class="badge-pill" style="margin-bottom: 15px; background:var(--secondary); color:var(--primary); border:none;">💰 Transparence des Tarifs</span>
+        <h1 style="font-family: var(--font-heading); font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 15px;">
+          Prix d'une Climatisation Réversible dans le 06
+        </h1>
+        <p style="font-size: 18px; color: var(--text-muted); line-height: 1.6;">
+          Découvrez notre grille de tarifs indicatifs 2026 pour l'achat et la pose de climatisation réversible, pompe à chaleur air-air, gainable, ainsi que pour les prestations d'entretien premium dans les Alpes-Maritimes.
+        </p>
+      </div>
+
+      <!-- Pricing Table -->
+      <div style="background:var(--primary-light); border:2px solid var(--border-color); border-radius:var(--radius-md); overflow:hidden; margin-bottom:40px; box-shadow:var(--shadow-sm);">
+        <table style="width:100%; border-collapse:collapse; text-align:left; font-size:16px;">
+          <thead>
+            <tr style="background:var(--primary); color:white;">
+              <th style="padding:15px; color:white; font-weight:700;">Type de matériel</th>
+              <th style="padding:15px; color:white; font-weight:700;">Description de l'équipement</th>
+              <th style="padding:15px; color:white; font-weight:700;">Prix TTC Posé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-color); background:white;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Split mono design</td>
+              <td style="padding:15px; color:var(--text-muted);">2.5-3.5 kW, finition premium (miroir/bois/tissu), 19 dB</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">1 500 € – 3 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:#f8fafc;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Bi-split design</td>
+              <td style="padding:15px; color:var(--text-muted);">2 pièces, design coordonné premium</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">3 000 € – 5 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:white;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Tri-split mural</td>
+              <td style="padding:15px; color:var(--text-muted);">3 pièces, 1 groupe extérieur haute performance</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">4 000 € – 7 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:#f8fafc;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Quadri-split mural</td>
+              <td style="padding:15px; color:var(--text-muted);">4 pièces, maison complète, régulation intelligente</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">5 000 € – 9 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:white;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Gainable haut de gamme</td>
+              <td style="padding:15px; color:var(--text-muted);">Invisible en faux-plafond, multi-zones, ultra-silencieux</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">6 000 € – 15 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:#f8fafc;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">PAC réversible premium</td>
+              <td style="padding:15px; color:var(--text-muted);">COP 5+, SCOP A+++, filtres plasma ionisant</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">4 000 € – 10 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:white;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">VRV / VRF multi-zones</td>
+              <td style="padding:15px; color:var(--text-muted);">Villa grande surface, régulation IA zone par zone</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">8 000 € – 20 000 €</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color); background:#f8fafc;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Entretien premium</td>
+              <td style="padding:15px; color:var(--text-muted);">Contrat annuel complet + dépannage prioritaire 7j/7</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">150 € – 300 €/an</td>
+            </tr>
+            <tr style="background:white;">
+              <td style="padding:15px; font-weight:bold; color:var(--primary);">Mise aux normes R32</td>
+              <td style="padding:15px; color:var(--text-muted);">Remplacement de fluide écologique à basse empreinte</td>
+              <td style="padding:15px; font-weight:bold; color:var(--secondary); font-family:var(--font-mono);">150 € – 400 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="background:white; border:2px solid var(--border-color); padding:30px; border-radius:var(--radius-md); margin-bottom:40px;">
+        <h3 style="color:var(--primary); margin-bottom:12px; font-size:20px; font-weight:700;">Quels facteurs influencent le prix final dans les Alpes-Maritimes ?</h3>
+        <p style="font-size:15px; color:var(--text-muted); line-height:1.6; margin-bottom:15px;">
+          Le coût total de votre projet de climatisation réversible dans le 06 dépend principalement de :
+        </p>
+        <ul style="margin-left:20px; display:flex; flex-direction:column; gap:8px; font-size:15px; color:var(--text-muted);">
+          <li>Le type de système et le choix des finitions (split mural design miroir/bois ou intégration gainable invisible).</li>
+          <li>La puissance requise (calculée selon le volume des pièces, la présence de baies vitrées et le microclimat littoral vs arrière-pays).</li>
+          <li>Les contraintes de copropriété ou syndic (démarches Bâtiments de France ABF, discrétion esthétique et sonore à 19 dB).</li>
+          <li>Le choix de la marque de prestige (Daikin, Mitsubishi Electric, Toshiba).</li>
+        </ul>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="/devis/" class="btn-primary">Obtenir une estimation sur mesure</a>
+      </div>
+    </div>
+  </section>
+</Layout>
